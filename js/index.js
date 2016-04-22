@@ -25,15 +25,15 @@ angular
     }
 
   })
-  .controller('HolidaysController', ['$scope', '$http', 'UtilService', function($scope, $http, UtilService) {
+  .controller('HolidaysController', ['$http', 'UtilService', function($http, UtilService) {
+    var now = new Date(),
+        vm = this;
 
-    $scope.days = 0;
-    $scope.title = "cargando...";
-    $scope.date = "cargando...";
-    $scope.holidays = [];
-    $scope.current_holiday = 0;
-        
-    var now = new Date();
+    vm.days = 0;
+    vm.title = "cargando...";
+    vm.date = "cargando...";
+    vm.holidays = [];
+    vm.current_holiday = 0;
 
     $http
       .get('holidays.json')
@@ -41,7 +41,7 @@ angular
         function(res) {
           var ok = false;
 
-          $scope.holidays = res.data.data;
+          vm.holidays = res.data.data;
 
           res.data.data.forEach(function(holiday, index) {
             var date = new Date(holiday.date);
@@ -52,35 +52,36 @@ angular
                 && date.getMonth() >= now.getMonth() 
                 && date.getDate() >= now.getDate()) 
             {
-              $scope.render(index);
+              render(index);
               ok = true;
             }
           });
         },
         function() {
-          $scope.days = 0;
-          $scope.title = "Error";
-          $scope.date = "Recargue el sitio";
+          vm.days = 0;
+          vm.title = "Error";
+          vm.date = "Recargue el sitio";
         });
 
       
 
-      $scope.render = function(index) {
-        if (typeof $scope.holidays[index] !== "undefined") {
-          var holiday = $scope.holidays[index];
-          $scope.days = UtilService.days_diff(now.getFullYear() + '-' + (now.getMonth() + 1) + '-' + now.getDate(), holiday.date);
-          $scope.title = holiday.title;
-          $scope.date = UtilService.fulldate(holiday.date);
-          $scope.current_holiday = index;
+      function render(index) {
+        if (typeof vm.holidays[index] !== "undefined") {
+          var holiday = vm.holidays[index];
+
+          vm.days = UtilService.days_diff(now.getFullYear() + '-' + (now.getMonth() + 1) + '-' + now.getDate(), holiday.date);
+          vm.title = holiday.title;
+          vm.date = UtilService.fulldate(holiday.date);
+          vm.current_holiday = index;
         }
       }
 
-      $scope.next_holiday = function() {
-        $scope.render($scope.current_holiday + 1);
+      vm.next_holiday = function() {
+        render(vm.current_holiday + 1);
       }
 
-      $scope.previous_holiday = function() {
-        $scope.render($scope.current_holiday - 1);
+      vm.previous_holiday = function() {
+        render(vm.current_holiday - 1);
       }
 
   }]);

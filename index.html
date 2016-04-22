@@ -13,28 +13,7 @@
 	<link rel="stylesheet" href="css/index.css">
 </head>
 <body ng-app="holidays" ng-cloak>
-	<div class="mdl-layout mdl-js-layout" ng-controller="HolidaysController">
-		<!-- <header class="mdl-layout__header">
-			<div class="mdl-layout-icon"></div>
-				<div class="mdl-layout__header-row">
-					<span class="mdl-layout__title">Simple Layout</span>
-				<div class="mdl-layout-spacer"></div>
-				<nav class="mdl-navigation">
-					<a class="mdl-navigation__link" href="#">Nav link 1</a>
-					<a class="mdl-navigation__link" href="#">Nav link 2</a>
-					<a class="mdl-navigation__link" href="#">Nav link 3</a>
-				</nav>
-			</div>
-		</header>
-
-		<div class="mdl-layout__drawer">
-			<span class="mdl-layout__title">Simple Layout</span>
-			<nav class="mdl-navigation">
-				<a class="mdl-navigation__link" href="#">Nav link 2</a>
-				<a class="mdl-navigation__link" href="#">Nav link 2</a>
-				<a class="mdl-navigation__link" href="#">Nav link 3</a>
-			</nav>
-		</div> -->
+	<div class="mdl-layout mdl-js-layout" ng-controller="HolidaysController as HolidaysController">
 
 		<main class="mdl-layout__content">
 			<div class="mdl-grid">
@@ -45,7 +24,7 @@
 
 						<div class="mdl-card__title mdl-card--expand">
 							<h2 class="mdl-card__title-text mdl-color-text--grey-600">
-								{{days}}
+								{{HolidaysController.days}}
 							</h2>
 							 <small>dias</small>
 						</div>
@@ -53,17 +32,17 @@
 						<div class="mdl-card__supporting-text meta mdl-color-text--grey-600">
 							<i class="material-icons md-48">date_range</i>
 							<div>
-								<strong>{{title}}</strong>
-								<span>{{date}}</span>
+								<strong>{{HolidaysController.title}}</strong>
+								<span>{{HolidaysController.date}}</span>
 							</div>
 			            </div>
 
 			            <div class="mdl-card__actions mdl-card--border">
-							<button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect" ng-click="previous_holiday();" ng-show="holidays[current_holiday - 1]">
+							<button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect" ng-click="HolidaysController.previous_holiday();" ng-show="HolidaysController.holidays[HolidaysController.current_holiday - 1]">
 								<i class="material-icons">navigate_before</i>
 							</button>
 							<div class="mdl-layout-spacer"></div>
-							<button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect" ng-click="next_holiday();" ng-show="holidays[current_holiday + 1]">
+							<button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect" ng-click="HolidaysController.next_holiday();" ng-show="HolidaysController.holidays[HolidaysController.current_holiday + 1]">
 								<i class="material-icons">navigate_next</i>
 							</button>
 						</div>
