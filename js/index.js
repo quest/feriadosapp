@@ -36,7 +36,7 @@ angular
     var now = new Date();
 
     $http
-      .get('/holidays.json')
+      .get('holidays.json')
       .then(
         function(res) {
           var ok = false;
