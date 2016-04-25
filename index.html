@@ -104,7 +104,7 @@
 	if ('serviceWorker' in navigator) {
 		navigator
 			.serviceWorker
-			.register('js/sw.js', { scope: '/feriadosapp' })
+			.register('js/sw.js', { scope: '/feriadosapp/js' })
 			.then(function(registration) { });
 
 		navigator
