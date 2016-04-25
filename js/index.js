@@ -3,8 +3,8 @@ angular
   .service('UtilService', function() {
     
     this.days_diff = function(now, date) {
-      var date1 = new Date(date + ' GMT -0300'),
-          date2 = new Date(now + ' GMT -0300'),
+      var date1 = new Date(date + 'T00:00:00-03:00'),
+          date2 = new Date(now + 'T00:00:00-03:00'),
           timeDiff = Math.abs(date2.getTime() - date1.getTime()),
           diffDays = Math.ceil(timeDiff / (1000 * 3600 * 24)); 
 
@@ -12,8 +12,7 @@ angular
     }
 
     this.fulldate = function(date) {
-      // return date;
-      var date = new Date(date + ' GMT -0300'),
+      var date = new Date(date + 'T00:00:00-03:00'),
           monthNames = [
             'Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 
             'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'
@@ -26,7 +25,11 @@ angular
 
   })
   .controller('HolidaysController', ['$http', 'UtilService', function($http, UtilService) {
-    var now = new Date(),
+    var now = new Date([
+          new Date().getFullYear(),
+          ('0' + (new Date().getMonth() + 1)).slice(-2),
+          ('0' + (new Date().getDate() + 1)).slice(-2)
+        ].join('-') + 'T00:00:00-03:00'),
         vm = this;
 
     vm.days = 0;
@@ -44,7 +47,7 @@ angular
           vm.holidays = res.data.data;
 
           res.data.data.forEach(function(holiday, index) {
-            var date = new Date(holiday.date);
+            var date = new Date(holiday.date + 'T00:00:00-03:00');
 
             if (
                 ok == false
@@ -69,7 +72,11 @@ angular
         if (typeof vm.holidays[index] !== "undefined") {
           var holiday = vm.holidays[index];
 
-          vm.days = UtilService.days_diff(now.getFullYear() + '-' + (now.getMonth() + 1) + '-' + now.getDate(), holiday.date);
+          vm.days = UtilService.days_diff([
+            now.getFullYear(), 
+            ('0' + (now.getMonth() + 1)).slice(-2),
+            ('0' + (now.getDate() + 1)).slice(-2)
+          ].join('-'), holiday.date);
           vm.title = holiday.title;
           vm.date = UtilService.fulldate(holiday.date);
           vm.current_holiday = index;
