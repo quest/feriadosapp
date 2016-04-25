@@ -1,4 +1,4 @@
-var cacheName = 'feriados-2';
+var cacheName = 'feriados-3';
 var filesToCache = [
   '/',
   '/index.html',
