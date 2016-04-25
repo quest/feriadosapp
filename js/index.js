@@ -35,6 +35,7 @@ angular
     vm.days = 0;
     vm.title = "cargando...";
     vm.date = "cargando...";
+    vm.extra = "cargando...";
     vm.holidays = [];
     vm.current_holiday = 0;
 
@@ -78,6 +79,7 @@ angular
             ('0' + (now.getDate() + 1)).slice(-2)
           ].join('-'), holiday.date);
           vm.title = holiday.title;
+          vm.extra = holiday.extra;
           vm.date = UtilService.fulldate(holiday.date);
           vm.current_holiday = index;
         }
