@@ -28,7 +28,7 @@ angular
     var now = new Date([
           new Date().getFullYear(),
           ('0' + (new Date().getMonth() + 1)).slice(-2),
-          ('0' + (new Date().getDate() + 1)).slice(-2)
+          ('0' + (new Date().getDate())).slice(-2)
         ].join('-') + 'T00:00:00-03:00'),
         vm = this;
 
@@ -52,10 +52,8 @@ angular
 
             if (
                 ok == false
-                && date.getFullYear() >= now.getFullYear() 
-                && date.getMonth() >= now.getMonth() 
-                && date.getDate() >= now.getDate()) 
-            {
+                && date.getTime() >= now.getTime()
+            ) {
               render(index);
               ok = true;
             }
