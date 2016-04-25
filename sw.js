@@ -4,7 +4,8 @@ var filesToCache = [
   '/index.html',
   '/js/index.js',
   '/css/index.css',
-  '/img/giftly.png'
+  '/img/giftly.png',
+  '/holidays.json'
 ];
 
 self.addEventListener('install', function(e) {
