@@ -105,7 +105,14 @@
 		navigator
 			.serviceWorker
 			.register('sw.js', { scope: '/' })
-			.then(function(registration) { });
+			.then(function(registration) {
+				console.log(registration);
+				registration.pushManager.subscribe({
+					userVisibleOnly: true
+				}).then(function(sub) {
+					console.log('endpoint:', sub.endpoint);
+				});
+			});
 
 		navigator
 			.serviceWorker

@@ -1,4 +1,4 @@
-var cacheName = 'feriados-3';
+var cacheName = 'feriados-dev-1';
 var filesToCache = [
   '/',
   '/index.html',
@@ -9,13 +9,14 @@ var filesToCache = [
 ];
 
 self.addEventListener('install', function(e) {
-  e.waitUntil(
-    caches.open(cacheName).then(function(cache) {
-      return cache.addAll(filesToCache).then(function() {
-        return self.skipWaiting();
-      });
-    })
-  );
+  self.skipWaiting();
+  // e.waitUntil(
+  //   caches.open(cacheName).then(function(cache) {
+  //     return cache.addAll(filesToCache).then(function() {
+  //       return self.skipWaiting();
+  //     });
+  //   })
+  // );
 });
 
 self.addEventListener('activate', function(e) {
@@ -36,4 +37,16 @@ self.addEventListener('fetch', function(e) {
       return response || fetch(e.request);
     })
   );
+});
+
+self.addEventListener('push', function(event) {
+  console.log('Push message received', event);
+  console.log(event.data);
+  var title = 'Push message';
+  event.waitUntil(
+    self.registration.showNotification(title, {
+      body: 'The Message',
+      icon: 'img/icon-200x200.png',
+      tag: 'my-tag'
+    }));
 });
