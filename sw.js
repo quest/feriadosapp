@@ -1,4 +1,4 @@
-var cacheName = 'feriados-dev-4';
+var cacheName = 'feriados-dev-5';
 var filesToCache = [
   '/',
   '/index.html',
@@ -37,16 +37,4 @@ self.addEventListener('fetch', function(e) {
       return response || fetch(e.request);
     })
   );
-});
-
-self.addEventListener('push', function(event) {
-  console.log('Push message received', event);
-  console.log(event.data);
-  var title = 'Push message';
-  event.waitUntil(
-    self.registration.showNotification(title, {
-      body: 'The Message',
-      icon: 'img/icon-200x200.png',
-      tag: 'my-tag'
-    }));
 });
