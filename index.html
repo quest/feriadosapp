@@ -101,24 +101,24 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
 	<script src="js/index.js"></script>
 	<script>
-	if ('serviceWorker' in navigator) {
-		navigator
-			.serviceWorker
-			.register('sw.js', { scope: '/' })
-			.then(function(registration) {
-				// console.log(registration);
-				// registration.pushManager.subscribe({
-				// 	userVisibleOnly: true
-				// }).then(function(sub) {
-				// 	console.log('endpoint:', sub.endpoint);
-				// });
-			});
+	// if ('serviceWorker' in navigator) {
+	// 	navigator
+	// 		.serviceWorker
+	// 		.register('sw.js', { scope: '/' })
+	// 		.then(function(registration) {
+	// 			// console.log(registration);
+	// 			// registration.pushManager.subscribe({
+	// 			// 	userVisibleOnly: true
+	// 			// }).then(function(sub) {
+	// 			// 	console.log('endpoint:', sub.endpoint);
+	// 			// });
+	// 		});
 
-		navigator
-			.serviceWorker
-			.ready
-			.then(function(registration) {});
-	}
+	// 	navigator
+	// 		.serviceWorker
+	// 		.ready
+	// 		.then(function(registration) {});
+	// }
 	</script>
 	<script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async></script>
 	<script>
