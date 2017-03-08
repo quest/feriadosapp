@@ -1,6 +1,7 @@
 {
  "name": "Feriados",
- "gcm_sender_id": "1055342752641",
+ "short_name": "Feriados",
+ "gcm_sender_id": "482941778795",
  "icons": [
   {
    "src": "img/android-icon-36x36.png",
