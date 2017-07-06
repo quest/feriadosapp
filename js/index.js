@@ -40,7 +40,7 @@ angular
     vm.current_holiday = 0;
 
     $http
-      .get('holidays.json')
+      .get('api/holidays.json')
       .then(
         function(res) {
           var ok = false;
