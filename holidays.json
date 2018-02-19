@@ -204,6 +204,116 @@
 			"date": "2017-12-31",
 			"title": "Feriado Bancario",
 			"extra": "Sólo para Trabajadores de Instituciones Bancarias"
-		}
+		},
+    {
+      "date": "2018-01-01",
+      "title": "Año Nuevo",
+      "extra": "Civil e Irrenunciable"
+    },
+    {
+      "date": "2018-01-16",
+      "title": "Visita de Su Santidad el Papa Francisco",
+      "extra": "Sólo en Región Metropolitana"
+    },
+    {
+      "date": "2018-01-17",
+      "title": "Visita de Su Santidad el Papa Francisco",
+      "extra": "Sólo en Región de la Araucanía"
+    },
+    {
+      "date": "2018-01-18",
+      "title": "Visita de Su Santidad el Papa Francisco",
+      "extra": "Sólo en Región de Tarapacá"
+    },
+    {
+      "date": "2018-03-30",
+      "title": "Viernes Santo",
+      "extra": "Religioso"
+    },
+    {
+      "date": "2018-03-31",
+      "title": "Sabado Santo",
+      "extra": "Religioso"
+    },
+    {
+      "date": "2018-05-01",
+      "title": "Día Nacional del Trabajo",
+      "extra": "Civil"
+    },
+    {
+      "date": "2018-05-21",
+      "title": "Día de las Glorias Navales",
+      "extra": "Civil"
+    },
+    {
+      "date": "2018-06-07",
+      "title": "Asalto y Toma del Morro de Arica",
+      "extra": "Sólo en Región de Arica y Parinacota"
+    },
+    {
+      "date": "2018-07-02",
+      "title": "San Pedro y San Pablo",
+      "extra": "Religioso"
+    },
+    {
+      "date": "2018-07-16",
+      "title": "Día de la Virgen del Carmen",
+      "extra": "Religioso"
+    },
+    {
+      "date": "2018-08-15",
+      "title": "Asunción de la Virgen",
+      "extra": "Religioso"
+    },
+    {
+      "date": "2018-08-20",
+      "title": "Nacimiento del Prócer de la Independencia",
+      "extra": "Sólo en Comunas de Chillán y Chillán Viejo"
+    },
+    {
+      "date": "2018-09-17",
+      "title": "Fiestas Patrias",
+      "extra": "Civil"
+    },
+    {
+      "date": "2018-09-18",
+      "title": "Independencia Nacional",
+      "extra": "Civil e Irrenunciable"
+    },
+    {
+      "date": "2018-09-19",
+      "title": "Día de las Glorias del Ejército",
+      "extra": "Civil e Irrenunciable"
+    },
+    {
+      "date": "2018-10-15",
+      "title": "Encuentro de Dos Mundos",
+      "extra": "Civil"
+    },
+    {
+      "date": "2018-11-01",
+      "title": "Día de Todos los Santos",
+      "extra": "Religioso"
+    },
+    {
+      "date": "2018-11-02",
+      "title": "Día de las Iglesias Evangélicas y Protestantes",
+      "extra": "Religioso"
+    },
+    {
+      "date": "2018-12-08",
+      "title": "Inmaculada Concepción",
+      "extra": "Religioso"
+    },
+    {
+      "date": "2018-12-25",
+      "title": "Navidad",
+      "extra": "Religioso e Irrenunciable"
+    },
+    {
+      "date": "2018-12-31",
+      "title": "Feriado Bancario",
+      "extra": "Sólo para Trabajadores de Instituciones Bancarias"
+    }
 	]
 }
