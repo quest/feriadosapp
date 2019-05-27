@@ -409,7 +409,7 @@
   },
   {
     "id": 72,
-    "date": "2018-06-07",
+    "date": "2019-06-07",
     "title": "Asalto y Toma del Morro de Arica",
     "extra": "Sólo en Región de Arica y Parinacota",
     "law": ["Ley 20.663"],
@@ -417,7 +417,7 @@
   },
   {
     "id": 73,
-    "date": "2018-06-29",
+    "date": "2019-06-29",
     "title": "San Pedro y San Pablo",
     "extra": "Religioso",
     "law": ["Ley 2.977", "Ley 18.432", "Ley 19.668"],
@@ -425,7 +425,7 @@
   },
   {
     "id": 74,
-    "date": "2018-07-16",
+    "date": "2019-07-16",
     "title": "Día de la Virgen del Carmen",
     "extra": "Religioso",
     "law": ["Ley 20.148"],
@@ -433,7 +433,7 @@
   },
   {
     "id": 75,
-    "date": "2018-08-15",
+    "date": "2019-08-15",
     "title": "Asunción de la Virgen",
     "extra": "Religioso",
     "law": ["Ley 2.977"],
@@ -441,7 +441,7 @@
   },
   {
     "id": 76,
-    "date": "2018-08-20",
+    "date": "2019-08-20",
     "title": "Nacimiento del Prócer de la Independencia",
     "extra": "Sólo en Comunas de Chillán y Chillán Viejo",
     "law": ["Ley 16.535"],
@@ -449,7 +449,7 @@
   },
   {
     "id": 77,
-    "date": "2018-09-18",
+    "date": "2019-09-18",
     "title": "Independencia Nacional",
     "extra": "Civil e Irrenunciable",
     "law": ["Ley 2.977", "Ley 19.973"],
@@ -457,7 +457,7 @@
   },
   {
     "id": 78,
-    "date": "2018-09-19",
+    "date": "2019-09-19",
     "title": "Día de las Glorias del Ejército",
     "extra": "Civil e Irrenunciable",
     "law": ["Ley 2.977", "Ley 20.629"],
@@ -465,7 +465,7 @@
   },
   {
     "id": 79,
-    "date": "2018-09-20",
+    "date": "2019-09-20",
     "title": "Fiestas Patrias",
     "extra": "Civil",
     "law": ["Ley 20.215"],
@@ -473,7 +473,7 @@
   },
   {
     "id": 80,
-    "date": "2018-10-12",
+    "date": "2019-10-12",
     "title": "Encuentro de Dos Mundos",
     "extra": "Civil",
     "law": ["Ley 3.810", "Ley 19.668"],
@@ -481,7 +481,7 @@
   },
   {
     "id": 81,
-    "date": "2018-10-31",
+    "date": "2019-10-31",
     "title": "Día de las Iglesias Evangélicas y Protestantes",
     "extra": "Religioso",
     "law": ["Ley 20.299"],
@@ -489,7 +489,7 @@
   },
   {
     "id": 82,
-    "date": "2018-11-01",
+    "date": "2019-11-01",
     "title": "Día de Todos los Santos",
     "extra": "Religioso",
     "law": ["Ley 2.977"],
@@ -497,7 +497,7 @@
   },
   {
     "id": 83,
-    "date": "2018-12-08",
+    "date": "2019-12-08",
     "title": "Inmaculada Concepción",
     "extra": "Religioso",
     "law": ["Ley 2.977"],
@@ -505,7 +505,7 @@
   },
   {
     "id": 84,
-    "date": "2018-12-25",
+    "date": "2019-12-25",
     "title": "Navidad",
     "extra": "Religioso e Irrenunciable",
     "law": ["Ley 2.977", "Ley 19.973"],
@@ -513,7 +513,7 @@
   },
   {
     "id": 85,
-    "date": "2018-12-31",
+    "date": "2019-12-31",
     "title": "Feriado Bancario",
     "extra": "Sólo para Trabajadores de Instituciones Bancarias",
     "law": ["Ley General de Bancos"],
