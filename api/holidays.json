@@ -1,519 +1,159 @@
 {
   "data": [{
-    "id": 20,
-    "date": "2016-12-31",
-    "title": "Feriado Bancario",
-    "extra": "Sólo para Trabajadores de Instituciones Bancarias",
-    "law": ["Ley General de Bancos"],
-    "law_id": ["bancos"]
-  },
-  {
-    "id": 21,
-    "date": "2017-01-01",
+    "id": 86,
+    "date": "2020-01-01",
     "title": "Año Nuevo",
     "extra": "Civil e Irrenunciable",
     "law": ["Ley 2.977", "Ley 19.973"],
     "law_id": [2977, 19973]
   },
   {
-    "id": 22,
-    "date": "2017-01-02",
-    "title": "Año Nuevo",
-    "extra": "Civil",
-    "law": ["Ley 20.983"],
-    "law_id": [20983]
-  },
-  {
-    "id": 23,
-    "date": "2017-04-14",
+    "id": 87,
+    "date": "2020-04-10",
     "title": "Viernes Santo",
     "extra": "Religioso",
     "law": ["Ley 2.977"],
     "law_id": [2977]
   },
   {
-    "id": 25,
-    "date": "2017-04-15",
-    "title": "Sabado Santo",
-    "extra": "Religioso",
-    "law": ["Ley 2.977"],
-    "law_id": [2977]
-  },
-  {
-    "id": 26,
-    "date": "2017-04-19",
-    "title": "Censo Nacional Abreviado",
-    "extra": "Irrenunciable",
-    "law": ["Ley 19.790"],
-    "law_id": [19790]
-  },
-  {
-    "id": 27,
-    "date": "2017-05-01",
-    "title": "Día Nacional del Trabajo",
-    "extra": "Civil e Irrenunciable",
-    "law": ["Ley 19.973", "Código del Trabajo"],
-    "law_id": [19973, "trabajo"]
-  },
-  {
-    "id": 28,
-    "date": "2017-05-21",
-    "title": "Día de las Glorias Navales",
-    "extra": "Civil",
-    "law": ["Ley 2.977"],
-    "law_id": [2977]
-  },
-  {
-    "id": 29,
-    "date": "2017-06-07",
-    "title": "Asalto y Toma del Morro de Arica",
-    "extra": "Sólo en Región de Arica y Parinacota",
-    "law": ["Ley 20.663"],
-    "law_id": [20663]
-  },
-  {
-    "id": 30,
-    "date": "2017-06-26",
-    "title": "San Pedro y San Pablo",
-    "extra": "Religioso",
-    "law": ["Ley 2.977", "Ley 18.432", "Ley 19.668"],
-    "law_id": [2977, 18432, 19668]
-  },
-  {
-    "id": 31,
-    "date": "2017-07-02",
-    "title": "Elecciones Primarias",
-    "extra": "Civil e Irrenunciable. Por confirmar.",
-    "law": ["Ley 20.640"],
-    "law_id": [20640]
-  },
-  {
-    "id": 32,
-    "date": "2017-07-16",
-    "title": "Día de la Virgen del Carmen",
-    "extra": "Religioso",
-    "law": ["Ley 20.148"],
-    "law_id": [20148]
-  },
-  {
-    "id": 33,
-    "date": "2017-08-15",
-    "title": "Asunción de la Virgen",
-    "extra": "Religioso",
-    "law": ["Ley 2.977"],
-    "law_id": [2977]
-  },
-  {
-    "id": 34,
-    "date": "2017-08-20",
-    "title": "Nacimiento del Prócer de la Independencia",
-    "extra": "Sólo para escolares de Chillán y Chillán Viejo",
-    "law": ["Ley 16.535"],
-    "law_id": [16535]
-  },
-  {
-    "id": 35,
-    "date": "2017-09-18",
-    "title": "Independencia Nacional",
-    "extra": "Civil e Irrenunciable",
-    "law": ["Ley 2.977", "Ley 19.973"],
-    "law_id": [2977, 19973]
-  },
-  {
-    "id": 36,
-    "date": "2017-09-19",
-    "title": "Día de las Glorias del Ejército",
-    "extra": "Civil e Irrenunciable",
-    "law": ["Ley 2.977", "Ley 20.629"],
-    "law_id": [2977, 20629]
-  },
-  {
-    "id": 37,
-    "date": "2017-10-09",
-    "title": "Encuentro de Dos Mundos",
-    "extra": "Civil",
-    "law": ["Ley 3.810", "Ley 19.668"],
-    "law_id": [3810, 19668]
-  },
-  {
-    "id": 38,
-    "date": "2017-10-27",
-    "title": "Día de las Iglesias Evangélicas y Protestantes",
-    "extra": "Religioso",
-    "law": ["Ley 20.299"],
-    "law_id": [20299]
-  },
-  {
-    "id": 39,
-    "date": "2017-11-01",
-    "title": "Día de Todos los Santos",
-    "extra": "Religioso",
-    "law": ["Ley 2.977"],
-    "law_id": [2977]
-  },
-  {
-    "id": 40,
-    "date": "2017-11-19",
-    "title": "Elección Presidencial y Parlamentaria",
-    "extra": "Civil",
-    "law": ["Ley 18.700"],
-    "law_id": [18700]
-  },
-  {
-    "id": 41,
-    "date": "2017-12-08",
-    "title": "Inmaculada Concepción",
-    "extra": "Religioso",
-    "law": ["Ley 2.977"],
-    "law_id": [2977]
-  },
-  {
-    "id": 42,
-    "date": "2017-12-17",
-    "title": "Segunda vuelta Elección Presidencial",
-    "extra": "Civil. Por confirmar.",
-    "law": ["Ley 18.700"],
-    "law_id": [18700]
-  },
-  {
-    "id": 43,
-    "date": "2017-12-25",
-    "title": "Navidad",
-    "extra": "Religioso e Irrenunciable",
-    "law": ["Ley 2.977", "Ley 19.973"],
-    "law_id": [2977, 19973]
-  },
-  {
-    "id": 44,
-    "date": "2017-12-31",
-    "title": "Feriado Bancario",
-    "extra": "Sólo para Trabajadores de Instituciones Bancarias",
-    "law": ["Ley General de Bancos"],
-    "law_id": ["bancos"]
-  },
-  {
-    "id": 45,
-    "date": "2018-01-01",
-    "title": "Año Nuevo",
-    "extra": "Civil e Irrenunciable",
-    "law": ["Ley 2.977", "Ley 19.973"],
-    "law_id": [2977, 19973]
-  },
-  {
-    "id": 46,
-    "date": "2018-01-16",
-    "title": "Visita de Su Santidad el Papa Francisco",
-    "extra": "Sólo en Región Metropolitana",
-    "law": ["Ley 21.065"],
-    "law_id": [21065]
-  },
-  {
-    "id": 47,
-    "date": "2018-01-17",
-    "title": "Visita de Su Santidad el Papa Francisco",
-    "extra": "Sólo en Región de la Araucanía",
-    "law": ["Ley 21.051"],
-    "law_id": [21051]
-  },
-  {
-    "id": 48,
-    "date": "2018-01-18",
-    "title": "Visita de Su Santidad el Papa Francisco",
-    "extra": "Sólo en Región de Tarapacá",
-    "law": ["Ley 21.051"],
-    "law_id": [21051]
-  },
-  {
-    "id": 49,
-    "date": "2018-03-30",
-    "title": "Viernes Santo",
-    "extra": "Religioso",
-    "law": ["Ley 2.977"],
-    "law_id": [2977]
-  },
-  {
-    "id": 50,
-    "date": "2018-03-31",
-    "title": "Sabado Santo",
-    "extra": "Religioso",
-    "law": ["Ley 2.977"],
-    "law_id": [2977]
-  },
-  {
-    "id": 51,
-    "date": "2018-05-01",
-    "title": "Día Nacional del Trabajo",
-    "extra": "Civil",
-    "law": ["Ley 19.973", "Código del Trabajo"],
-    "law_id": [19973, "trabajo"]
-  },
-  {
-    "id": 52,
-    "date": "2018-05-21",
-    "title": "Día de las Glorias Navales",
-    "extra": "Civil",
-    "law": ["Ley 2.977"],
-    "law_id": [2977]
-  },
-  {
-    "id": 53,
-    "date": "2018-06-07",
-    "title": "Asalto y Toma del Morro de Arica",
-    "extra": "Sólo en Región de Arica y Parinacota",
-    "law": ["Ley 20.663"],
-    "law_id": [20663]
-  },
-  {
-    "id": 54,
-    "date": "2018-07-02",
-    "title": "San Pedro y San Pablo",
-    "extra": "Religioso",
-    "law": ["Ley 2.977", "Ley 18.432", "Ley 19.668"],
-    "law_id": [2977, 18432, 19668]
-  },
-  {
-    "id": 55,
-    "date": "2018-07-16",
-    "title": "Día de la Virgen del Carmen",
-    "extra": "Religioso",
-    "law": ["Ley 20.148"],
-    "law_id": [20148]
-  },
-  {
-    "id": 56,
-    "date": "2018-08-15",
-    "title": "Asunción de la Virgen",
-    "extra": "Religioso",
-    "law": ["Ley 2.977"],
-    "law_id": [2977]
-  },
-  {
-    "id": 57,
-    "date": "2018-08-20",
-    "title": "Nacimiento del Prócer de la Independencia",
-    "extra": "Sólo en Comunas de Chillán y Chillán Viejo",
-    "law": ["Ley 16.535"],
-    "law_id": [16535]
-  },
-  {
-    "id": 58,
-    "date": "2018-09-17",
-    "title": "Fiestas Patrias",
-    "extra": "Civil",
-    "law": ["Ley 20.215"],
-    "law_id": [20215]
-  },
-  {
-    "id": 59,
-    "date": "2018-09-18",
-    "title": "Independencia Nacional",
-    "extra": "Civil e Irrenunciable",
-    "law": ["Ley 2.977", "Ley 19.973"],
-    "law_id": [2977, 19973]
-  },
-  {
-    "id": 60,
-    "date": "2018-09-19",
-    "title": "Día de las Glorias del Ejército",
-    "extra": "Civil e Irrenunciable",
-    "law": ["Ley 2.977", "Ley 20.629"],
-    "law_id": [2977, 20629]
-  },
-  {
-    "id": 61,
-    "date": "2018-10-15",
-    "title": "Encuentro de Dos Mundos",
-    "extra": "Civil",
-    "law": ["Ley 3.810", "Ley 19.668"],
-    "law_id": [3810, 19668]
-  },
-  {
-    "id": 62,
-    "date": "2018-11-01",
-    "title": "Día de Todos los Santos",
-    "extra": "Religioso",
-    "law": ["Ley 2.977"],
-    "law_id": [2977]
-  },
-  {
-    "id": 63,
-    "date": "2018-11-02",
-    "title": "Día de las Iglesias Evangélicas y Protestantes",
-    "extra": "Religioso",
-    "law": ["Ley 20.299"],
-    "law_id": [20299]
-  },
-  {
-    "id": 64,
-    "date": "2018-12-08",
-    "title": "Inmaculada Concepción",
-    "extra": "Religioso",
-    "law": ["Ley 2.977"],
-    "law_id": [2977]
-  },
-  {
-    "id": 65,
-    "date": "2018-12-25",
-    "title": "Navidad",
-    "extra": "Religioso e Irrenunciable",
-    "law": ["Ley 2.977", "Ley 19.973"],
-    "law_id": [2977, 19973]
-  },
-  {
-    "id": 66,
-    "date": "2018-12-31",
-    "title": "Feriado Bancario",
-    "extra": "Sólo para Trabajadores de Instituciones Bancarias",
-    "law": ["Ley General de Bancos"],
-    "law_id": ["bancos"]
-  },
-  {
-    "id": 67,
-    "date": "2019-01-01",
-    "title": "Año Nuevo",
-    "extra": "Civil e Irrenunciable",
-    "law": ["Ley 2.977", "Ley 19.973"],
-    "law_id": [2977, 19973]
-  },
-  {
-    "id": 68,
-    "date": "2019-04-19",
-    "title": "Viernes Santo",
-    "extra": "Religioso",
-    "law": ["Ley 2.977"],
-    "law_id": [2977]
-  },
-  {
-    "id": 69,
-    "date": "2019-04-20",
+    "id": 88,
+    "date": "2019-04-11",
     "title": "Sábado Santo",
     "extra": "Religioso",
     "law": ["Ley 2.977"],
     "law_id": [2977]
   },
   {
-    "id": 70,
-    "date": "2019-05-01",
+    "id": 89,
+    "date": "2020-05-01",
     "title": "Día Nacional Del Trabajo",
     "extra": "Civil e Irrenunciable",
     "law": ["Ley 19.973", "Código del Trabajo"],
     "law_id": [19973, "trabajo"]
   },
   {
-    "id": 71,
-    "date": "2019-05-21",
+    "id": 90,
+    "date": "2020-05-21",
     "title": "Día de las Glorias Navales",
     "extra": "Civil",
     "law": ["Ley 2.977"],
     "law_id": [2977]
   },
   {
-    "id": 72,
-    "date": "2019-06-07",
+    "id": 91,
+    "date": "2020-06-07",
     "title": "Asalto y Toma del Morro de Arica",
     "extra": "Sólo en Región de Arica y Parinacota",
     "law": ["Ley 20.663"],
     "law_id": [20663]
   },
   {
-    "id": 73,
-    "date": "2019-06-29",
+    "id": 92,
+    "date": "2020-06-29",
     "title": "San Pedro y San Pablo",
     "extra": "Religioso",
     "law": ["Ley 2.977", "Ley 18.432", "Ley 19.668"],
     "law_id": [2977, 18432, 19668]
   },
   {
-    "id": 74,
-    "date": "2019-07-16",
+    "id": 93,
+    "date": "2020-07-16",
     "title": "Día de la Virgen del Carmen",
     "extra": "Religioso",
     "law": ["Ley 20.148"],
     "law_id": [20148]
   },
   {
-    "id": 75,
-    "date": "2019-08-15",
+    "id": 94,
+    "date": "2020-08-15",
     "title": "Asunción de la Virgen",
     "extra": "Religioso",
     "law": ["Ley 2.977"],
     "law_id": [2977]
   },
   {
-    "id": 76,
-    "date": "2019-08-20",
+    "id": 95,
+    "date": "2020-08-20",
     "title": "Nacimiento del Prócer de la Independencia",
     "extra": "Sólo en Comunas de Chillán y Chillán Viejo",
     "law": ["Ley 16.535"],
     "law_id": [16535]
   },
   {
-    "id": 77,
-    "date": "2019-09-18",
+    "id": 96,
+    "date": "2020-09-18",
     "title": "Independencia Nacional",
     "extra": "Civil e Irrenunciable",
     "law": ["Ley 2.977", "Ley 19.973"],
     "law_id": [2977, 19973]
   },
   {
-    "id": 78,
-    "date": "2019-09-19",
+    "id": 97,
+    "date": "2020-09-19",
     "title": "Día de las Glorias del Ejército",
     "extra": "Civil e Irrenunciable",
     "law": ["Ley 2.977", "Ley 20.629"],
     "law_id": [2977, 20629]
   },
   {
-    "id": 79,
-    "date": "2019-09-20",
-    "title": "Fiestas Patrias",
-    "extra": "Civil",
-    "law": ["Ley 20.215"],
-    "law_id": [20215]
-  },
-  {
-    "id": 80,
-    "date": "2019-10-12",
+    "id": 98,
+    "date": "2020-10-12",
     "title": "Encuentro de Dos Mundos",
     "extra": "Civil",
     "law": ["Ley 3.810", "Ley 19.668"],
     "law_id": [3810, 19668]
   },
   {
-    "id": 81,
-    "date": "2019-10-31",
+    "id": 99,
+    "date": "2020-10-25",
+    "title": "Plebiscito Constitucional",
+    "extra": "Civil e Irrenunciable",
+    "law": ["Ley 21.200", "Ley 18.8700", "Ley 21.221"],
+    "law_id": [21200, 18700, 21221]
+  },
+  {
+    "id": 100,
+    "date": "2020-10-31",
     "title": "Día de las Iglesias Evangélicas y Protestantes",
     "extra": "Religioso",
     "law": ["Ley 20.299"],
     "law_id": [20299]
   },
   {
-    "id": 82,
-    "date": "2019-11-01",
+    "id": 101,
+    "date": "2020-11-01",
     "title": "Día de Todos los Santos",
     "extra": "Religioso",
     "law": ["Ley 2.977"],
     "law_id": [2977]
   },
   {
-    "id": 83,
-    "date": "2019-12-08",
+    "id": 101,
+    "date": "2020-11-29",
+    "title": "Elección Primaria de Alcaldes y Gobernadores Regionales",
+    "extra": "Civil e Irrenunciable",
+    "law": ["Ley 20.640", "Ley 18.700", "Ley 21.221"],
+    "law_id": [20640, 18700, 21221]
+  },
+  {
+    "id": 102,
+    "date": "2020-12-08",
     "title": "Inmaculada Concepción",
     "extra": "Religioso",
     "law": ["Ley 2.977"],
     "law_id": [2977]
   },
   {
-    "id": 84,
-    "date": "2019-12-25",
+    "id": 103,
+    "date": "2020-12-25",
     "title": "Navidad",
     "extra": "Religioso e Irrenunciable",
     "law": ["Ley 2.977", "Ley 19.973"],
     "law_id": [2977, 19973]
   },
   {
-    "id": 85,
-    "date": "2019-12-31",
+    "id": 104,
+    "date": "2020-12-31",
     "title": "Feriado Bancario",
     "extra": "Sólo para Trabajadores de Instituciones Bancarias",
     "law": ["Ley General de Bancos"],

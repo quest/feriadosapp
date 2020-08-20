@@ -1,0 +1,11 @@
+{
+    "data": [{
+      "id": 20,
+      "date": "2016-12-31",
+      "title": "Feriado Bancario",
+      "extra": "Sólo para Trabajadores de Instituciones Bancarias",
+      "law": ["Ley General de Bancos"],
+      "law_id": ["bancos"]
+    }]
+  }
+  
