@@ -3,8 +3,8 @@ angular
   .service('UtilService', function() {
     
     this.days_diff = function(now, date) {
-      var date1 = new Date(date + 'T00:00:00-03:00'),
-          date2 = new Date(now + 'T00:00:00-03:00'),
+      var date1 = new Date(date + 'T00:00:00-04:00'),
+          date2 = new Date(now + 'T00:00:00-04:00'),
           timeDiff = Math.abs(date2.getTime() - date1.getTime()),
           diffDays = Math.ceil(timeDiff / (1000 * 3600 * 24)); 
 
@@ -12,7 +12,7 @@ angular
     }
 
     this.fulldate = function(date) {
-      var date = new Date(date + 'T00:00:00-03:00'),
+      var date = new Date(date + 'T00:00:00-04:00'),
           monthNames = [
             'Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 
             'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'
@@ -29,7 +29,7 @@ angular
           new Date().getFullYear(),
           ('0' + (new Date().getMonth() + 1)).slice(-2),
           ('0' + (new Date().getDate())).slice(-2)
-        ].join('-') + 'T00:00:00-03:00'),
+        ].join('-') + 'T00:00:00-04:00'),
         vm = this;
 
     vm.days = 0;
@@ -48,7 +48,7 @@ angular
           vm.holidays = res.data.data;
 
           res.data.data.forEach(function(holiday, index) {
-            var date = new Date(holiday.date + 'T00:00:00-03:00');
+            var date = new Date(holiday.date + 'T00:00:00-04:00');
 
             if (
                 ok == false
