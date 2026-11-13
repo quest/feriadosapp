@@ -21,6 +21,11 @@ eClass aplican. Si un hook pide documentar en la KB, se cierra con
   explícito del usuario**.
 - La rama `master` tiene el sitio viejo (2016–2019) y no se publica.
 - `.nojekyll` evita que GitHub Pages procese el sitio con Jekyll.
+- **Cloudflare está delante de GitHub Pages** (`server: cloudflare`, el HTML sale `DYNAMIC`). Una regla
+  de Cloudflare, anterior a la PWA, redirige `/api/holidays.json` (301) a
+  `api.victorsanmartin.com/feriados/en.json` → `api.boostr.cl/feriados/en.json`. Visto el 13-11-2026.
+- Publicado el 13-11-2026 (commit `4ef0b57`): GitHub Pages tardó ~30 s; se comprobó `sw.js` con la
+  `VERSION` nueva y el ID de GA4 en `js/config.js` del dominio.
 
 ## Dónde vive cada cosa
 
