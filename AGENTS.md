@@ -25,7 +25,15 @@ eClass aplican. Si un hook pide documentar en la KB, se cierra con
   de Cloudflare, anterior a la PWA, redirige `/api/holidays.json` (301) a
   `api.victorsanmartin.com/feriados/en.json` → `api.boostr.cl/feriados/en.json`. Visto el 13-11-2026.
 - Publicado el 13-11-2026 (commit `4ef0b57`): GitHub Pages tardó ~30 s; se comprobó `sw.js` con la
-  `VERSION` nueva y el ID de GA4 en `js/config.js` del dominio.
+  `VERSION` nueva y el ID de GA4 en `js/config.js` del dominio. El mismo día se publicó el estilo con
+  degradados pastel e Inter (`VERSION` `2026-11-13.4`).
+- **SEO pendiente** (propuesto el 13-11-2026, el usuario dijo "aún no"): páginas reales para las
+  herramientas (`/dias-habiles/`, `/fines-de-semana-largos/`; las rutas `#…` no se indexan), contenido
+  del inicio escrito en el HTML, actualización diaria con una GitHub Action (exige que la rama principal
+  sea `gh-pages`, hoy es `master`), datos estructurados `WebApplication` en el inicio, `404.html` y
+  una página por feriado con reseñas que el usuario revise. Lo que tiene que hacer el usuario: verificar
+  el dominio en Search Console y enviar el sitemap, y en Cloudflare redirigir `feriadosapp.com` directo
+  a `https://www.feriadosapp.com` (hoy pasa por `http://www`, dos saltos).
 
 ## Dónde vive cada cosa
 
@@ -56,6 +64,13 @@ chico en el computador. Pidió algo "hermoso, limpio, útil y fácil de leer". R
 - **Fondo blanco, texto casi negro y un solo acento: rojo `#d93025` = feriado** (los "días rojos" del
   calendario). El rojo no se usa para botones ni enlaces; los botones principales son negros
   (`--ink`). No volver al verde azulado ni a un estilo parecido a Lukas.
+- **Degradados pastel y letra liviana** (decisión del usuario, 13-11-2026, con un sitio de ejemplo tipo
+  landing SaaS): `.aurora` pone un brillo rosado/durazno/lavanda/celeste detrás de la parte superior de
+  cada página; el planificador, la invitación a instalar y el CTA de las páginas por año usan
+  `--grad-soft`. Títulos en peso 500 (nunca 700 o más), números grandes en 400. Tipografía **Inter**
+  alojada en `fonts/inter-latin.woff2` (licencia OFL en `fonts/LICENSE.txt`), sin Google Fonts en vivo.
+- Tarjetas blancas con borde fino (`--line`) y sombra muy suave; la barra superior es transparente y
+  toma fondo esmerilado al hacer scroll (`.is-scrolled`).
 - **Poco texto:** sin párrafos de explicación, sin tipos ("Civil") ni etiquetas repetidas; un dato por
   línea. Las tiras de días (`strip`) solo van en el planificador.
 - **Aire:** secciones separadas por espacio, filas con líneas finas, tarjetas grises suaves sin borde.

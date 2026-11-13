@@ -47,10 +47,12 @@ screenshot(`<!doctype html><meta charset="utf-8">
 <style>
   html,body{margin:0}
   body{width:1200px;height:630px;box-sizing:border-box;display:flex;align-items:center;gap:72px;padding:0 96px;
-    background:#fff;color:#17171a;font-family:-apple-system,"SF Pro Display",system-ui,sans-serif;overflow:hidden}
+    background:radial-gradient(40% 60% at 6% 20%,#ffcadb,transparent 72%),radial-gradient(40% 60% at 96% 10%,#ffd6b8,transparent 72%),radial-gradient(40% 60% at 70% 95%,#ddd5ff,transparent 72%),radial-gradient(35% 55% at 20% 100%,#c9e6ff,transparent 72%),#fff;
+    color:#17171a;font-family:"Inter",-apple-system,system-ui,sans-serif;overflow:hidden}
+  @font-face{font-family:"Inter";font-weight:300 700;src:url("${pathToFileURL(path.join(ROOT, 'fonts', 'inter-latin.woff2')).href}") format("woff2")}
   .text{flex:1}
-  .brand{font-size:26px;font-weight:600;color:#5c5c64}
-  h1{font-size:76px;line-height:1.02;letter-spacing:-.04em;margin:18px 0 0;font-weight:750}
+  .brand{font-size:26px;font-weight:500;color:#5c5c64}
+  h1{font-size:78px;line-height:1.02;letter-spacing:-.045em;margin:18px 0 0;font-weight:500}
   h1 span{color:#d93025}
   .url{font-size:26px;margin-top:32px;color:#5c5c64}
   img{width:300px;height:300px;flex:none;filter:drop-shadow(0 24px 48px rgba(217,48,37,.25))}

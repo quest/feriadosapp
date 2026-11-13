@@ -1,0 +1,3 @@
+Inter (https://rsms.me/inter/), subconjunto latino servido por Google Fonts (v20).
+Copyright (c) 2016 The Inter Project Authors. Licencia SIL Open Font License 1.1:
+https://openfontlicense.org

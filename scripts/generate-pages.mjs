@@ -136,12 +136,14 @@ function yearPage(year, holidays, cal, years, sprite) {
   <script>
     try { var t = localStorage.getItem('pref:theme'); if (t === 'dark' || t === 'auto') document.documentElement.dataset.theme = t; } catch (e) {}
   </script>
+  <link rel="preload" href="/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="/css/app.css">
   <script type="module" src="/js/page.js"></script>
   <script type="application/ld+json">${JSON.stringify(jsonLd).replace(/</g, '\\u003c')}</script>
 </head>
 <body data-route="anio">
 ${sprite.trim()}
+  <div class="aurora" aria-hidden="true"></div>
   <a class="skip" href="#contenido">Saltar al contenido</a>
   <header class="appbar">
     <a class="brand" href="/#inicio"><img src="/icons/icon.svg" width="28" height="28" alt=""><span>Feriados Chile</span></a>

@@ -1,10 +1,11 @@
 // Entry point of the static year pages (/2026/ …): analytics, offline support and the share button.
 
 import { initAnalytics } from './analytics.js';
-import { registerServiceWorker, shareLink } from './shell.js';
+import { registerServiceWorker, shareLink, watchScroll } from './shell.js';
 
 initAnalytics();
 registerServiceWorker();
+watchScroll();
 
 document.addEventListener('click', (event) => {
   const button = event.target.closest('[data-action="share-page"]');

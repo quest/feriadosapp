@@ -28,6 +28,7 @@
   <script>
     try { var t = localStorage.getItem('pref:theme'); if (t === 'dark' || t === 'auto') document.documentElement.dataset.theme = t; } catch (e) {}
   </script>
+  <link rel="preload" href="/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="/css/app.css">
   <script type="module" src="/js/page.js"></script>
   <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Feriados Chile","item":"https://www.feriadosapp.com/"},{"@type":"ListItem","position":2,"name":"Feriados 2015","item":"https://www.feriadosapp.com/2015/"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"¿Cuántos feriados hay en 2015 en Chile?","acceptedAnswer":{"@type":"Answer","text":"En 2015 hay 15 feriados en Chile y 6 fines de semana largos."}},{"@type":"Question","name":"¿Cuáles son los feriados irrenunciables de 2015?","acceptedAnswer":{"@type":"Answer","text":"Año Nuevo (jueves 1 de enero), Día Nacional del Trabajo (viernes 1 de mayo), Independencia Nacional (viernes 18 de septiembre), Día de las Glorias del Ejército (sábado 19 de septiembre) y Navidad (viernes 25 de diciembre). En esos días los trabajadores del comercio tienen descanso obligatorio, así que la mayoría de las tiendas cierra."}},{"@type":"Question","name":"¿Cuáles son los fines de semana largos de 2015?","acceptedAnswer":{"@type":"Answer","text":"Del viernes 3 al domingo 5 de abril (3 días), del viernes 1 al domingo 3 de mayo (3 días), del sábado 27 al lunes 29 de junio (3 días), del viernes 18 al domingo 20 de septiembre (3 días), del sábado 10 al lunes 12 de octubre (3 días) y del viernes 25 al domingo 27 de diciembre (3 días)."}}]}]}</script>
@@ -51,6 +52,7 @@
   <symbol id="i-external" viewBox="0 0 24 24"><path d="M14 4h6v6M20 4l-8.5 8.5"/><path d="M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></symbol>
   <symbol id="i-plus-square" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="3.5"/><path d="M12 8.5v7M8.5 12h7"/></symbol>
 </svg>
+  <div class="aurora" aria-hidden="true"></div>
   <a class="skip" href="#contenido">Saltar al contenido</a>
   <header class="appbar">
     <a class="brand" href="/#inicio"><img src="/icons/icon.svg" width="28" height="28" alt=""><span>Feriados Chile</span></a>

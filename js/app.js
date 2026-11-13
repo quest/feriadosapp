@@ -14,7 +14,7 @@ import { getYear, onHolidaysUpdated } from './lib/api.js';
 import { buildIcs } from './lib/ics.js';
 import { initAnalytics, track } from './analytics.js';
 import { API_DOCS_URL, FIRST_YEAR, SITE_URL } from './config.js';
-import { applyTheme, readTheme, registerServiceWorker, saveTheme, shareLink, toast } from './shell.js';
+import { applyTheme, readTheme, registerServiceWorker, saveTheme, shareLink, toast, watchScroll } from './shell.js';
 import { PAGE_YEARS } from './years.js';
 
 const $view = document.getElementById('view');
@@ -256,7 +256,7 @@ function nextCard(cal, g, { today = false, following = null } = {}) {
   }
   const date = capitalize(formatLong(g.date, { withYear: yearOf(g.date) !== currentYear() }));
   return `<section class="next" aria-labelledby="next-title">
-    <p class="next-eyebrow">${today ? '¡Hoy es feriado!' : 'Próximo feriado'}</p>
+    <p class="eyebrow"><i></i>${today ? '¡Hoy es feriado!' : 'Próximo feriado'}</p>
     ${sheet(g.date)}
     <h1 class="next-name" id="next-title">${esc(groupName(g))}<span class="sr-only">, ${esc(date)}</span></h1>
     ${count}
@@ -270,7 +270,7 @@ function nextCard(cal, g, { today = false, following = null } = {}) {
 
 function emptyNext() {
   return `<section class="next">
-    <p class="next-eyebrow">Próximo feriado</p>
+    <p class="eyebrow"><i></i>Próximo feriado</p>
     <h1 class="next-name">Aún no hay más feriados publicados</h1>
   </section>`;
 }
@@ -898,6 +898,7 @@ document.addEventListener('visibilitychange', () => document.visibilityState ===
 setInterval(refreshToday, 60000);
 
 applyTheme(readTheme());
+watchScroll();
 initAnalytics();
 registerServiceWorker();
 render();

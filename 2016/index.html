@@ -28,6 +28,7 @@
   <script>
     try { var t = localStorage.getItem('pref:theme'); if (t === 'dark' || t === 'auto') document.documentElement.dataset.theme = t; } catch (e) {}
   </script>
+  <link rel="preload" href="/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="/css/app.css">
   <script type="module" src="/js/page.js"></script>
   <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Feriados Chile","item":"https://www.feriadosapp.com/"},{"@type":"ListItem","position":2,"name":"Feriados 2016","item":"https://www.feriadosapp.com/2016/"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"¿Cuántos feriados hay en 2016 en Chile?","acceptedAnswer":{"@type":"Answer","text":"En 2016 hay 17 feriados en Chile y 7 fines de semana largos."}},{"@type":"Question","name":"¿Cuáles son los feriados irrenunciables de 2016?","acceptedAnswer":{"@type":"Answer","text":"Año Nuevo (viernes 1 de enero), Día Nacional del Trabajo (domingo 1 de mayo), Elecciones Primarias Municipales - sujeto a modificación (domingo 12 de junio), Independencia Nacional (domingo 18 de septiembre), Elecciones Municipales (domingo 23 de octubre) y Navidad (domingo 25 de diciembre). En esos días los trabajadores del comercio tienen descanso obligatorio, así que la mayoría de las tiendas cierra."}},{"@type":"Question","name":"¿Cuáles son los fines de semana largos de 2016?","acceptedAnswer":{"@type":"Answer","text":"Del viernes 1 al domingo 3 de enero (3 días), del viernes 25 al domingo 27 de marzo (3 días), del sábado 25 al lunes 27 de junio (3 días), del sábado 13 al lunes 15 de agosto (3 días), del sábado 17 al lunes 19 de septiembre (3 días), del sábado 8 al lunes 10 de octubre (3 días) y del sábado 29 de octubre al martes 1 de noviembre (4 días)."}}]}]}</script>
@@ -51,6 +52,7 @@
   <symbol id="i-external" viewBox="0 0 24 24"><path d="M14 4h6v6M20 4l-8.5 8.5"/><path d="M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></symbol>
   <symbol id="i-plus-square" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="3.5"/><path d="M12 8.5v7M8.5 12h7"/></symbol>
 </svg>
+  <div class="aurora" aria-hidden="true"></div>
   <a class="skip" href="#contenido">Saltar al contenido</a>
   <header class="appbar">
     <a class="brand" href="/#inicio"><img src="/icons/icon.svg" width="28" height="28" alt=""><span>Feriados Chile</span></a>

@@ -6,7 +6,7 @@
 //
 // Bump VERSION on every deploy that changes the shell so phones pick up the new files.
 
-const VERSION = '2026-11-13.3';
+const VERSION = '2026-11-13.4';
 const SHELL_CACHE = `shell-${VERSION}`;
 const PAGES_CACHE = 'pages-v1';
 const API_CACHE = 'api-v1';
@@ -15,6 +15,7 @@ const NETWORK_TIMEOUT_MS = 4000;
 const SHELL = [
   '/',
   '/css/app.css',
+  '/fonts/inter-latin.woff2',
   '/js/app.js',
   '/js/analytics.js',
   '/js/config.js',

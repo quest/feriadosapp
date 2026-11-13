@@ -52,6 +52,13 @@ export function saveTheme(theme) {
   applyTheme(theme);
 }
 
+/** The app bar is transparent over the top gradient and gets a frosted background once scrolled. */
+export function watchScroll() {
+  const update = () => document.documentElement.classList.toggle('is-scrolled', window.scrollY > 8);
+  window.addEventListener('scroll', update, { passive: true });
+  update();
+}
+
 let toastTimer;
 export function toast(message) {
   let el = document.getElementById('toast');
