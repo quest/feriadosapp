@@ -5,8 +5,13 @@
 // - /api/ (the old static JSON of this site) and third parties (Google Analytics) are not touched.
 //
 // Bump VERSION on every deploy that changes the shell so phones pick up the new files.
+//
+// Cloudflare sits in front of GitHub Pages: right after a deploy it may still serve the previous file
+// for ~10 minutes, and it tells browsers to keep files for 4 hours. So the worker never asks for a
+// shell file by its plain URL: it asks for `?v=VERSION`, a URL no cache has seen before this deploy,
+// and stores the answer under the plain URL that the pages request.
 
-const VERSION = '2026-11-13.4';
+const VERSION = '2026-11-13.5';
 const SHELL_CACHE = `shell-${VERSION}`;
 const PAGES_CACHE = 'pages-v1';
 const API_CACHE = 'api-v1';
@@ -33,12 +38,23 @@ const SHELL = [
   '/icons/apple-touch-icon.png',
 ];
 
+function freshRequest(url) {
+  const versioned = new URL(url, self.location.origin);
+  versioned.searchParams.set('v', VERSION);
+  return new Request(versioned, { cache: 'no-cache' });
+}
+
+async function precache() {
+  const cache = await caches.open(SHELL_CACHE);
+  await Promise.all(SHELL.map(async (url) => {
+    const res = await fetch(freshRequest(url));
+    if (!res.ok) throw new Error(`precache ${url}: ${res.status}`);
+    await cache.put(url, res);
+  }));
+}
+
 self.addEventListener('install', (event) => {
-  event.waitUntil(
-    caches.open(SHELL_CACHE)
-      .then((cache) => cache.addAll(SHELL.map((url) => new Request(url, { cache: 'reload' }))))
-      .then(() => self.skipWaiting()),
-  );
+  event.waitUntil(precache().then(() => self.skipWaiting()));
 });
 
 self.addEventListener('activate', (event) => {
@@ -80,7 +96,7 @@ async function networkFirst(event, cacheName, fallbackUrl) {
 async function staleWhileRevalidate(event) {
   const cache = await caches.open(SHELL_CACHE);
   const cached = await cache.match(event.request, { ignoreSearch: true });
-  const network = fetch(event.request)
+  const network = fetch(freshRequest(event.request.url))
     .then((res) => {
       if (res.ok) return cache.put(event.request, res.clone()).then(() => res);
       return res;

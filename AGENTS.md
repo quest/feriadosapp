@@ -121,6 +121,18 @@ chico en el computador. Pidió algo "hermoso, limpio, útil y fácil de leer". R
 - **Subir `VERSION` en `sw.js` en cada publicación que cambie archivos del shell.** Si no, los
   celulares ven la versión anterior en la primera carga. Si se agrega un JS o CSS nuevo, sumarlo a
   `SHELL`.
+- **Caché de Cloudflare** (visto el 13-11-2026): guarda CSS, JS, fuentes e imágenes en su borde
+  (`cf-cache-status: HIT`) respetando los 10 min de GitHub Pages, y le dice al navegador que los
+  guarde **4 horas** (`max-age=14400`). El HTML no lo guarda (`DYNAMIC`). La llave incluye el
+  `?query`. Pasó en la publicación del rediseño: Cloudflare pidió `css/app.css` segundos antes de que
+  GitHub Pages terminara y siguió entregando el CSS viejo, y el service worker lo precargó. Por eso
+  `sw.js` pide cada archivo del shell como `?v=VERSION` (URL nueva en cada publicación, ninguna caché
+  la tiene) y lo guarda con la URL limpia.
+- **Para comprobar una publicación, pedir las URL sin `?query`** (eso es lo que ven los visitantes):
+  `curl -sI https://www.feriadosapp.com/css/app.css` y revisar `last-modified`. Con `?t=…` se salta
+  la caché de Cloudflare y el resultado engaña. Si queda vieja, esperar 10 min o purgar en Cloudflare.
+  Las visitas sin service worker (la primera de cada persona) pueden ver CSS o JS viejos hasta 10 min
+  después de publicar.
 - Instalación: Android/Chrome usa `beforeinstallprompt` (botón "Instalar"); iPhone muestra los pasos
   (Compartir → Agregar a inicio).
 
