@@ -1,0 +1,25 @@
+{
+  "id": "/",
+  "name": "Feriados Chile",
+  "short_name": "Feriados",
+  "description": "Cuánto falta para el próximo feriado, calendario, fines de semana largos, planificador de vacaciones y días hábiles en Chile.",
+  "lang": "es-CL",
+  "dir": "ltr",
+  "start_url": "/?utm_source=pwa",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff",
+  "categories": ["utilities", "productivity", "lifestyle"],
+  "icons": [
+    { "src": "/icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "/icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "/icons/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" },
+    { "src": "/icons/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+  ],
+  "shortcuts": [
+    { "name": "Calendario", "short_name": "Calendario", "url": "/#calendario", "icons": [{ "src": "/icons/icon-192.png", "sizes": "192x192" }] },
+    { "name": "Planificar vacaciones", "short_name": "Vacaciones", "url": "/#vacaciones", "icons": [{ "src": "/icons/icon-192.png", "sizes": "192x192" }] },
+    { "name": "Calcular días hábiles", "short_name": "Días hábiles", "url": "/#habiles", "icons": [{ "src": "/icons/icon-192.png", "sizes": "192x192" }] }
+  ]
+}

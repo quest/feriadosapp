@@ -1,0 +1,124 @@
+{
+ "status": "success",
+ "data": [
+  {
+   "date": "2027-01-01",
+   "title": "Año Nuevo",
+   "type": "Civil",
+   "inalienable": true,
+   "extra": "Civil e Irrenunciable"
+  },
+  {
+   "date": "2027-03-26",
+   "title": "Viernes Santo",
+   "type": "Civil",
+   "inalienable": false,
+   "extra": "Civil"
+  },
+  {
+   "date": "2027-03-27",
+   "title": "Sábado Santo",
+   "type": "Civil",
+   "inalienable": false,
+   "extra": "Civil"
+  },
+  {
+   "date": "2027-05-01",
+   "title": "Día Nacional del Trabajo",
+   "type": "Civil",
+   "inalienable": true,
+   "extra": "Civil e Irrenunciable"
+  },
+  {
+   "date": "2027-05-21",
+   "title": "Día de las Glorias Navales",
+   "type": "Civil",
+   "inalienable": false,
+   "extra": "Civil"
+  },
+  {
+   "date": "2027-06-21",
+   "title": "Día Nacional de los Pueblos Indígenas",
+   "type": "Civil",
+   "inalienable": false,
+   "extra": "Civil"
+  },
+  {
+   "date": "2027-06-28",
+   "title": "San Pedro y San Pablo",
+   "type": "Civil",
+   "inalienable": false,
+   "extra": "Civil"
+  },
+  {
+   "date": "2027-07-16",
+   "title": "Día de la Virgen del Carmen",
+   "type": "Civil",
+   "inalienable": false,
+   "extra": "Civil"
+  },
+  {
+   "date": "2027-08-15",
+   "title": "Asunción de la Virgen",
+   "type": "Civil",
+   "inalienable": false,
+   "extra": "Civil"
+  },
+  {
+   "date": "2027-09-17",
+   "title": "Feriado Adicional Fiestas Patrias",
+   "type": "Civil",
+   "inalienable": false,
+   "extra": "Civil"
+  },
+  {
+   "date": "2027-09-18",
+   "title": "Independencia Nacional",
+   "type": "Civil",
+   "inalienable": true,
+   "extra": "Civil e Irrenunciable"
+  },
+  {
+   "date": "2027-09-19",
+   "title": "Día de las Glorias del Ejército",
+   "type": "Civil",
+   "inalienable": true,
+   "extra": "Civil e Irrenunciable"
+  },
+  {
+   "date": "2027-10-11",
+   "title": "Encuentro de Dos Mundos",
+   "type": "Civil",
+   "inalienable": false,
+   "extra": "Civil"
+  },
+  {
+   "date": "2027-10-31",
+   "title": "Día de las Iglesias Evangélicas y Protestantes",
+   "type": "Civil",
+   "inalienable": false,
+   "extra": "Civil"
+  },
+  {
+   "date": "2027-11-01",
+   "title": "Día de Todos los Santos",
+   "type": "Civil",
+   "inalienable": false,
+   "extra": "Civil"
+  },
+  {
+   "date": "2027-12-08",
+   "title": "Inmaculada Concepción",
+   "type": "Civil",
+   "inalienable": false,
+   "extra": "Civil"
+  },
+  {
+   "date": "2027-12-25",
+   "title": "Navidad",
+   "type": "Civil",
+   "inalienable": true,
+   "extra": "Civil e Irrenunciable"
+  }
+ ]
+}
